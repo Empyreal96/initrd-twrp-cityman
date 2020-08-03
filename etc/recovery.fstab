@@ -7,52 +7,52 @@
 /system_image    emmc				/dev/block/mmcblk0p39              /dev/block/mmcblk0p39 
 #/vendor          ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor     flags=display="Vendor";backup=1
 #/vendor_image    emmc				/dev/block/mmcblk0p              /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
-/sdcard	         ext4              /dev/block/mmcblk0p41	flags=display="Internal Storage (TWRP)";backup=1;wipeingui
+/sdcard	         vfat              /dev/block/mmcblk0p41	flags=display="Internal Storage (TWRP)";backup=1;wipeingui;wait
 /cache	         ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache
 
-/recovery        emmc				/dev/block/mmcblk0pboot1         /dev/block/mmcblk0boot1
+/recovery        emmc				/dev/block/mmcblk0pboot1         /dev/block/mmcblk0boot1 flags=display="GRUB + TWRP Boot";backup=1
 
 
-/internal    ntfs				/dev/block/mmcblk0p40  flags=display="Windows Mobile Data"
+/internal    ntfs				/dev/block/mmcblk0p40  flags=display="Windows Mobile Data";backup=1;wipeingui
 
 /usb-otg         vfat              /dev/block/sda1      /dev/block/sda              flags=removable;storage;display=USB-OTG
 
 # DO NOT EDIT THESE PARTITIONS. #
 
-/mmcblk0p1		emmc				/dev/block/mmcblk0p1			flags=backup=0;fsflags=ro
-/mmcblk0p2		emmc				/dev/block/mmcblk0p2			flags=backup=0;fsflags=ro
-/mmcblk0p3		emmc				/dev/block/mmcblk0p3			flags=backup=0;fsflags=ro
-/mmcblk0p4		emmc				/dev/block/mmcblk0p4			flags=backup=0;fsflags=ro
-/mmcblk0p5		emmc				/dev/block/mmcblk0p5			flags=backup=0;fsflags=ro
-/mmcblk0p6		emmc				/dev/block/mmcblk0p6			flags=backup=0;fsflags=ro
-/mmcblk0p7		emmc				/dev/block/mmcblk0p7			flags=backup=0;fsflags=ro
-/mmcblk0p8		emmc				/dev/block/mmcblk0p8			flags=backup=0;fsflags=ro
-/mmcblk0p9		emmc				/dev/block/mmcblk0p9			flags=backup=0;fsflags=ro
-/mmcblk0p10		emmc				/dev/block/mmcblk0p10			flags=backup=0;fsflags=ro
-/mmcblk0p11		emmc				/dev/block/mmcblk0p11			flags=backup=0;fsflags=ro
-/mmcblk0p12		emmc				/dev/block/mmcblk0p12			flags=backup=0;fsflags=ro
-/mmcblk0p13		emmc				/dev/block/mmcblk0p13			flags=backup=0;fsflags=ro
-/mmcblk0p14		emmc				/dev/block/mmcblk0p14			flags=backup=0;fsflags=ro
-/mmcblk0p15		emmc				/dev/block/mmcblk0p15			flags=backup=0;fsflags=ro
-/mmcblk0p16		emmc				/dev/block/mmcblk0p16			flags=backup=0;fsflags=ro
-/mmcblk0p17		emmc				/dev/block/mmcblk0p17			flags=backup=0;fsflags=ro
-/mmcblk0p18		emmc				/dev/block/mmcblk0p18			flags=backup=0;fsflags=ro
-/mmcblk0p19		emmc				/dev/block/mmcblk0p19			flags=backup=0;fsflags=ro
-/mmcblk0p20		emmc				/dev/block/mmcblk0p20			flags=backup=0;fsflags=ro
-/mmcbkl0p21		emmc				/dev/block/mmcblk0p21			flags=backup=0;fsflags=ro
-/mmcbkl0p22		emmc				/dev/block/mmcblk0p22			flags=backup=0;fsflags=ro
-/mmcbkl0p23		emmc				/dev/block/mmcblk0p23			flags=backup=0;fsflags=ro
-/mmcbkl0p24		emmc				/dev/block/mmcblk0p24			flags=backup=0;fsflags=ro
-/mmcbkl0p25		emmc				/dev/block/mmcblk0p25			flags=backup=0;fsflags=ro
-/mmcbkl0p26		emmc				/dev/block/mmcblk0p26			flags=backup=0;fsflags=ro
-/mmcbkl0p27		emmc				/dev/block/mmcblk0p27			flags=backup=0;fsflags=ro
-/mmcbkl0p28		emmc				/dev/block/mmcblk0p28			flags=backup=0;fsflags=ro
-/mmcbkl0p29		emmc				/dev/block/mmcblk0p29			flags=backup=0;fsflags=ro
-/mmcbkl0p30		emmc				/dev/block/mmcblk0p30			flags=backup=0;fsflags=ro
-/mmcbkl0p31		emmc				/dev/block/mmcblk0p31			flags=backup=0;fsflags=ro
-/mmcbkl0p32		emmc				/dev/block/mmcblk0p32			flags=backup=0;fsflags=ro
-/mmcbkl0p33		emmc				/dev/block/mmcblk0p33			flags=backup=0;fsflags=ro
-/mmcbkl0p34		emmc				/dev/block/mmcblk0p34			flags=backup=0;fsflags=ro
-/mmcbkl0p35		emmc				/dev/block/mmcblk0p35			flags=backup=0;fsflags=ro
-/mmcbkl0p36		emmc				/dev/block/mmcblk0p36			flags=backup=0;fsflags=ro
-/mmcbkl0p38		emmc				/dev/block/mmcblk0p38			flags=backup=0;fsflags=ro
+/mmcblk0p1		emmc				/dev/block/mmcblk0p1			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p2		emmc				/dev/block/mmcblk0p2			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p3		emmc				/dev/block/mmcblk0p3			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p4		emmc				/dev/block/mmcblk0p4			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p5		emmc				/dev/block/mmcblk0p5			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p6		emmc				/dev/block/mmcblk0p6			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p7		emmc				/dev/block/mmcblk0p7			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p8		emmc				/dev/block/mmcblk0p8			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p9		emmc				/dev/block/mmcblk0p9			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p10		emmc				/dev/block/mmcblk0p10			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p11		emmc				/dev/block/mmcblk0p11			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p12		emmc				/dev/block/mmcblk0p12			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p13		emmc				/dev/block/mmcblk0p13			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p14		emmc				/dev/block/mmcblk0p14			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p15		emmc				/dev/block/mmcblk0p15			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p16		emmc				/dev/block/mmcblk0p16			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p17		emmc				/dev/block/mmcblk0p17			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p18		emmc				/dev/block/mmcblk0p18			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p19		emmc				/dev/block/mmcblk0p19			flags=backup=0;fsflags=ro,noauto
+/mmcblk0p20		emmc				/dev/block/mmcblk0p20			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p21		emmc				/dev/block/mmcblk0p21			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p22		emmc				/dev/block/mmcblk0p22			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p23		emmc				/dev/block/mmcblk0p23			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p24		emmc				/dev/block/mmcblk0p24			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p25		emmc				/dev/block/mmcblk0p25			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p26		emmc				/dev/block/mmcblk0p26			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p27		emmc				/dev/block/mmcblk0p27			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p28		emmc				/dev/block/mmcblk0p28			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p29		emmc				/dev/block/mmcblk0p29			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p30		emmc				/dev/block/mmcblk0p30			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p31		emmc				/dev/block/mmcblk0p31			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p32		emmc				/dev/block/mmcblk0p32			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p33		emmc				/dev/block/mmcblk0p33			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p34		emmc				/dev/block/mmcblk0p34			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p35		emmc				/dev/block/mmcblk0p35			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p36		emmc				/dev/block/mmcblk0p36			flags=backup=0;fsflags=ro,noauto
+/mmcbkl0p38		emmc				/dev/block/mmcblk0p38			flags=backup=0;fsflags=ro,noauto

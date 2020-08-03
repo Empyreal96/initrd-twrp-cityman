@@ -174,11 +174,11 @@
 		<variable name="navbar_btn_y" value="1856"/>
 		<variable name="keyboard_y" value="1149"/>
 		<variable name="keyboard_terminal_y" value="1053"/>
-		<variable name="background_color" value="#1A1A1A"/>
-		<variable name="accent_color" value="#0090CA"/>
+		<variable name="background_color" value="#2d89ef"/>
+		<variable name="accent_color" value="#2b5797"/>
 		<variable name="accent_color_semitransparent" value="#0090CA30"/>
-		<variable name="text_color" value="#EEEEEE"/>
-		<variable name="text_button_color" value="#EEEEEE"/>
+		<variable name="text_color" value="#ffffff"/>
+		<variable name="text_button_color" value="#ffffff"/>
 		<variable name="text_success_color" value="#76FF03"/>
 		<variable name="text_fail_color" value="#FF0101"/>
 		<variable name="highlight_color" value="#1A1A1A80"/>
@@ -187,7 +187,7 @@
 		<variable name="semi_transparent" value="#00000099"/>
 		<variable name="warning" value="#F8F8A0"/>
 		<variable name="error" value="#FF0101"/>
-		<variable name="highlight" value="#0090CA"/>
+		<variable name="highlight" value="#ffffff"/>
 		<variable name="fileselector_linecolor" value="#555555"/>
 		<variable name="fileselector_highlight_color" value="#555555"/>
 		<variable name="fileselector_separatorheight" value="2"/>

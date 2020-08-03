@@ -12,7 +12,7 @@
 
 		<!-- Partition display names -->
 		<string name="system">Windows System</string>
-		<string name="system_image">Windows System Image</string>
+		<string name="system_image">System Image</string>
 		<string name="vendor">Vendor</string>
 		<string name="vendor_image">Vendor Image</string>
 		<string name="boot">EFIESP</string>
@@ -20,8 +20,8 @@
 		<string name="cache">Cache</string>
 		<string name="data">Data</string>
 		<string name="data_backup">Data (excl. storage)</string>
-		<string name="sdcard">TWRP Internal Storage</string>
-		<string name="internal">Windows User Data</string>
+		<string name="sdcard">TWRP Data</string>
+		<string name="internal">Windows Data Partition</string>
 		<string name="microsd">Micro SD card</string>
 		<string name="usbotg">USB OTG</string>
 		<string name="android_secure">Android Secure</string>
@@ -33,7 +33,7 @@
 		<string name="autostorage">Storage</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">TWRP Lumia 950XL by Empyreal96</string>
+		<string name="twrp_header">TWRP4GURB Lumia 950XL by Empyreal96</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp">CPU: %tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">Battery: %tw_battery%</string>
