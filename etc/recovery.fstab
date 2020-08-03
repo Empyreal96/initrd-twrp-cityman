@@ -1,0 +1,58 @@
+# We need to use /system_image when backing up in TWRP #
+# Partitions will be different for most users, this is MY setup (I have split my W10M Data partition into 2) #
+# It's more reliable for the 950XL to use /dev/block/mmcblk0* than /dev/block/platform/*#
+
+/boot            emmc				/dev/block/mmcblk0p37              /dev/block/mmcblk0p37	flags=display="EFIESP";backup=1;wait
+/system          ntfs              /dev/block/mmcblk0p39	flags=display="Windows 10 Mobile System";backup=1;wipeingui;wait
+/system_image    emmc				/dev/block/mmcblk0p39              /dev/block/mmcblk0p39 
+#/vendor          ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor     flags=display="Vendor";backup=1
+#/vendor_image    emmc				/dev/block/mmcblk0p              /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
+/sdcard	         ext4              /dev/block/mmcblk0p41	flags=display="Internal Storage (TWRP)";backup=1;wipeingui
+/cache	         ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache
+
+/recovery        emmc				/dev/block/mmcblk0pboot1         /dev/block/mmcblk0boot1
+
+
+/internal    ntfs				/dev/block/mmcblk0p40  flags=display="Windows Mobile Data"
+
+/usb-otg         vfat              /dev/block/sda1      /dev/block/sda              flags=removable;storage;display=USB-OTG
+
+# DO NOT EDIT THESE PARTITIONS. #
+
+/mmcblk0p1		emmc				/dev/block/mmcblk0p1			flags=backup=0;fsflags=ro
+/mmcblk0p2		emmc				/dev/block/mmcblk0p2			flags=backup=0;fsflags=ro
+/mmcblk0p3		emmc				/dev/block/mmcblk0p3			flags=backup=0;fsflags=ro
+/mmcblk0p4		emmc				/dev/block/mmcblk0p4			flags=backup=0;fsflags=ro
+/mmcblk0p5		emmc				/dev/block/mmcblk0p5			flags=backup=0;fsflags=ro
+/mmcblk0p6		emmc				/dev/block/mmcblk0p6			flags=backup=0;fsflags=ro
+/mmcblk0p7		emmc				/dev/block/mmcblk0p7			flags=backup=0;fsflags=ro
+/mmcblk0p8		emmc				/dev/block/mmcblk0p8			flags=backup=0;fsflags=ro
+/mmcblk0p9		emmc				/dev/block/mmcblk0p9			flags=backup=0;fsflags=ro
+/mmcblk0p10		emmc				/dev/block/mmcblk0p10			flags=backup=0;fsflags=ro
+/mmcblk0p11		emmc				/dev/block/mmcblk0p11			flags=backup=0;fsflags=ro
+/mmcblk0p12		emmc				/dev/block/mmcblk0p12			flags=backup=0;fsflags=ro
+/mmcblk0p13		emmc				/dev/block/mmcblk0p13			flags=backup=0;fsflags=ro
+/mmcblk0p14		emmc				/dev/block/mmcblk0p14			flags=backup=0;fsflags=ro
+/mmcblk0p15		emmc				/dev/block/mmcblk0p15			flags=backup=0;fsflags=ro
+/mmcblk0p16		emmc				/dev/block/mmcblk0p16			flags=backup=0;fsflags=ro
+/mmcblk0p17		emmc				/dev/block/mmcblk0p17			flags=backup=0;fsflags=ro
+/mmcblk0p18		emmc				/dev/block/mmcblk0p18			flags=backup=0;fsflags=ro
+/mmcblk0p19		emmc				/dev/block/mmcblk0p19			flags=backup=0;fsflags=ro
+/mmcblk0p20		emmc				/dev/block/mmcblk0p20			flags=backup=0;fsflags=ro
+/mmcbkl0p21		emmc				/dev/block/mmcblk0p21			flags=backup=0;fsflags=ro
+/mmcbkl0p22		emmc				/dev/block/mmcblk0p22			flags=backup=0;fsflags=ro
+/mmcbkl0p23		emmc				/dev/block/mmcblk0p23			flags=backup=0;fsflags=ro
+/mmcbkl0p24		emmc				/dev/block/mmcblk0p24			flags=backup=0;fsflags=ro
+/mmcbkl0p25		emmc				/dev/block/mmcblk0p25			flags=backup=0;fsflags=ro
+/mmcbkl0p26		emmc				/dev/block/mmcblk0p26			flags=backup=0;fsflags=ro
+/mmcbkl0p27		emmc				/dev/block/mmcblk0p27			flags=backup=0;fsflags=ro
+/mmcbkl0p28		emmc				/dev/block/mmcblk0p28			flags=backup=0;fsflags=ro
+/mmcbkl0p29		emmc				/dev/block/mmcblk0p29			flags=backup=0;fsflags=ro
+/mmcbkl0p30		emmc				/dev/block/mmcblk0p30			flags=backup=0;fsflags=ro
+/mmcbkl0p31		emmc				/dev/block/mmcblk0p31			flags=backup=0;fsflags=ro
+/mmcbkl0p32		emmc				/dev/block/mmcblk0p32			flags=backup=0;fsflags=ro
+/mmcbkl0p33		emmc				/dev/block/mmcblk0p33			flags=backup=0;fsflags=ro
+/mmcbkl0p34		emmc				/dev/block/mmcblk0p34			flags=backup=0;fsflags=ro
+/mmcbkl0p35		emmc				/dev/block/mmcblk0p35			flags=backup=0;fsflags=ro
+/mmcbkl0p36		emmc				/dev/block/mmcblk0p36			flags=backup=0;fsflags=ro
+/mmcbkl0p38		emmc				/dev/block/mmcblk0p38			flags=backup=0;fsflags=ro
