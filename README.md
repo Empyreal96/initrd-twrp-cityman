@@ -1,5 +1,5 @@
 # initrd-twrp-cityman
-Repo containing my edits on the Nexus 6P TWRP Ramdisk working with the Lumia 950 XL
+# Repo containing my edits on the Nexus 6P TWRP Ramdisk working with the Lumia 950 XL (When I say working.. It boots and touch works, partitions will need to be manually reflected in the fstab)
 
 
 
