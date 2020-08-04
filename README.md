@@ -1,4 +1,4 @@
-# initrd-twrp-cityman
+# initrd-twrp-cityman (TWRP4GRUB?)
 # Repo containing my edits on the Nexus 6P TWRP Ramdisk working with the Lumia 950 XL (When I say working.. It boots and touch works, partitions will need to be manually reflected in the fstab)
 
 
@@ -8,7 +8,7 @@
 
 - Can back up Windows System, EFIESP and Windows Data to TWRP's Allocated partition.
 
-
+# First Edits: #
 
 - Initial public upload, VERY basic and most things don't work.
 
