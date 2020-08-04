@@ -18,5 +18,7 @@
 
 
 
+Thanks to @ J0SH1X on Twitter for the initial pointers on loading TWRP
+
 # This is the raw ramdisk, not the actual files needed to boot
 # If you want to try this but don't know how to 'install' it, go through the means and head over to WoA-project's github, install Windows ARM64 and all the requirements (bootshim, UEFI loader etc.), then after you are familiar with that, head over to my website and follow the Linux on 950XL guide on my website, specifically obtaining the boot files (grub) and the required android kernel and initramfs found In that repo, copy to device and configure grub..
