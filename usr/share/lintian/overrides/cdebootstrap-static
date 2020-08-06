@@ -1,0 +1,2 @@
+embedded-library usr/bin/cdebootstrap-static: bzip2
+embedded-library usr/bin/cdebootstrap-static: zlib

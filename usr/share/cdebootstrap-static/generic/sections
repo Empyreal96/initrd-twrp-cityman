@@ -1,0 +1,12 @@
+Section: base
+Flavour:
+  build
+  minimal
+  standard
+
+Section: build
+Flavour: build
+
+Section: standard
+Flavour: standard
+

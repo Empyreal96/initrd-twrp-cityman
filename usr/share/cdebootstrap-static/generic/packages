@@ -1,0 +1,15 @@
+Section: base
+Packages: apt
+Flags: essential
+
+Section: build
+Packages:
+ build-essential
+ fakeroot
+
+Section: standard
+Packages:
+ priority-required
+ priority-important
+ -makedev
+

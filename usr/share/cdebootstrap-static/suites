@@ -1,0 +1,15 @@
+Match-Origin: Undefined
+Set-Origin: Debian
+
+Match-Origin: Debian
+Mirror: http://deb.debian.org/debian
+Keyring: debian-archive-keyring.gpg
+
+Match-Origin: Kali
+Mirror: http://http.kali.org
+Keyring: kali-archive-keyring.gpg
+
+Match-Origin: Ubuntu
+Mirror: http://archive.ubuntu.com/ubuntu
+Keyring: ubuntu-archive-keyring.gpg
+

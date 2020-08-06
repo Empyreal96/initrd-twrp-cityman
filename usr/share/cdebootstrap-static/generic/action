@@ -1,0 +1,41 @@
+Action: essential-extract
+
+Action: mount
+What: proc
+
+Action: essential-install
+Flags: force, only
+What: dpkg
+
+Action: essential-install
+Flags: force, only
+What: base-passwd
+
+Action: helper-install
+What: cdebootstrap-helper-rc.d
+
+Action: helper-install
+What: cdebootstrap-helper-makedev
+
+Action: essential-unpack
+What: essential
+
+Action: essential-configure
+
+Action: essential-install
+
+Action: helper-install
+What: cdebootstrap-helper-apt
+
+Action: install
+
+Action: helper-remove
+What: cdebootstrap-helper-apt
+
+Action: helper-remove
+What: cdebootstrap-helper-rc.d
+Flavour: standard
+
+Action: helper-remove
+What: cdebootstrap-helper-makedev
+

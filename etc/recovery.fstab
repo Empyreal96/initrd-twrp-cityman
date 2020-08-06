@@ -3,17 +3,17 @@
 # It's more reliable for the 950XL to use /dev/block/mmcblk0* than /dev/block/platform/*#
 
 /boot            emmc				/dev/block/mmcblk0p37              /dev/block/mmcblk0p37	flags=display="EFIESP";backup=1;wait
-/system          ntfs              /dev/block/mmcblk0p39	flags=display="Windows 10 Mobile System";backup=1;wipeingui;wait
+/system          ntfs              /dev/block/mmcblk0p39	flags=display="Windows 10 Mobile System";backup=1;wipeingui;wait;fsflags=rw
 /system_image    emmc				/dev/block/mmcblk0p39              /dev/block/mmcblk0p39 
 #/vendor          ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor     flags=display="Vendor";backup=1
 #/vendor_image    emmc				/dev/block/mmcblk0p              /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
 /sdcard	         vfat              /dev/block/mmcblk0p41	flags=display="Internal Storage (TWRP)";backup=1;wipeingui;wait
-/cache	         ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache
+#/cache	         ext4              /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache
 
 /recovery        emmc				/dev/block/mmcblk0pboot1         /dev/block/mmcblk0boot1 flags=display="GRUB + TWRP Boot";backup=1
 
 
-/internal    ntfs				/dev/block/mmcblk0p40  flags=display="Windows Mobile Data";backup=1;wipeingui
+/internal    ntfs				/dev/block/mmcblk0p40  flags=display="Windows Mobile Data";backup=1;wipeingui;fsflags=rw
 
 /usb-otg         vfat              /dev/block/sda1      /dev/block/sda              flags=removable;storage;display=USB-OTG
 

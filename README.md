@@ -1,6 +1,16 @@
 # initrd-twrp-cityman (TWRP4GRUB?)
 # Repo containing my edits on the Nexus 6P TWRP Ramdisk working with the Lumia 950 XL (When I say working.. It boots and touch works, partitions will need to be manually reflected in the fstab)
+# This is just a 'For Fun' project I am doing, this is by no means a start to running Android or anything like that.. I am just wasting time with what I can do with TWRP and Grub
 
+
+# Recent Edits: #
+
+- Added bash binary to ramdisk compiled for ARM (https://forum.xda-developers.com/android/software-hacking/dev-lastest-bash-android-t2898295)
+
+- Replaced with my modified version of the Material TWRP theme.. It's now a 'Windows Mobile' inspired theme. (Original theme: https://forum.xda-developers.com/android/themes/theme-twrp-materialised-dark-light-play-t2915584)
+
+
+# Second Edits: #
 
 - Tweaked the UI to give it a more 'Windows' feel.
 
@@ -12,7 +22,7 @@
 
 - Initial public upload, VERY basic and most things don't work.
 
-- NTFS rw support,
+- NTFS support,
 
 - Linked to MY partition layout, Windows MainOS Drive as System, Windows Data as Internal, EFIESP as Boot
 

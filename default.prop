@@ -14,7 +14,7 @@ debug.atrace.tags.enableflags=0
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Mon Jun 22 01:31:01 UTC 2020
+ro.bootimage.build.date=Tue Aug 04 00:50:24 UTC 2020
 ro.bootimage.build.date.utc=1592789461
 ro.bootimage.build.fingerprint=Huawei/omni_angler/angler:6.0.1/MOB31K/20:eng/test-keys
 persist.sys.usb.config=adb
@@ -34,7 +34,7 @@ ro.build.version.base_os=
 ro.build.date=Mon Jun 22 01:29:42 UTC 2020
 ro.build.date.utc=0
 ro.build.type=eng
-ro.build.user=jenkins
+ro.build.user=empyreal96
 ro.build.host=f13e74e204de
 ro.build.tags=test-keys
 ro.build.flavor=omni_angler-eng
